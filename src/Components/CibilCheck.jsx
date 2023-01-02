@@ -7,6 +7,7 @@ export default function CibilCheck() {
       <Header
         src={"./assets/images/BackArrow.svg"}
         dis={{ display: "block" }} btnStyle={{width :'24px', height :'24px', backgroundColor :'#071329', borderRadius :'50%'}}
+        path={"/EmploymentDetails"}
       />
       <div className="mx-[24px] pb-[32px]">
         <div className="w-[100%] h-[8px] border-solid  rounded-[4px] bg-[#EDF4FE] mt-[16px]">

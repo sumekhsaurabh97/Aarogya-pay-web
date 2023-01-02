@@ -15,6 +15,7 @@ export default function MobileVerification(props) {
           backgroundColor: "#071329",
           borderRadius: "50%",
         }}
+        path={props.path}
       />
       <div className="mx-[24px] pb-[32px]">
         <img
@@ -59,18 +60,9 @@ export default function MobileVerification(props) {
             Resend in 01:00
           </p>
         </div>
-
-        <NavLink to={"/MobileVerification_OTP"}>
+        <NavLink to={props.MobileVerification_URL}>
           <button
             className={`h-[48px] w-[100%] bg-[#294A85] text-[white] mx-[auto] block rounded-[8px] ${props.mobVarif_btn_toggle}`}
-            style={props.btn_style}
-          >
-            {props.btn_text}
-          </button>
-        </NavLink>
-        <NavLink to={"/DetailsForm"}>
-          <button
-            className={`h-[48px] w-[100%] bg-[#294A85] text-[white] mx-[auto] block rounded-[8px] ${props.OTP_submit_btn_toggle}`}
             style={props.btn_style}
           >
             {props.btn_text}

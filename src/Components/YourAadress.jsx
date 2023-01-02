@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import Header from "./Header";
 
-export default function YourAadress() {
+export default function YourAadress(props) {
   return (
     <>
       <Header
@@ -15,6 +15,7 @@ export default function YourAadress() {
           backgroundColor: "#071329",
           borderRadius: "50%",
         }}
+        path={"/DetailsForm"}
       />
       <div className="mx-[24px] pb-[32px]">
         <div className="w-[100%] h-[8px] border-solid  rounded-[4px] bg-[#EDF4FE] mt-[16px]">

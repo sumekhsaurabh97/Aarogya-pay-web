@@ -15,6 +15,7 @@ export default function DetailsForm() {
           backgroundColor: "#071329",
           borderRadius: "50%",
         }}
+        path={"/MobileVerification_OTP"}
       />
       <div className="mx-[24px] pb-[32px]">
         <div className="w-[100%] h-[8px] border-solid  rounded-[4px] bg-[#EDF4FE] mt-[16px]">

@@ -18,10 +18,10 @@ function App() {
      <Routes>
 
      <Route exact path='/' element={<HeroSection/>}/>
-     <Route exact path='/MobileVerification' element={<MobileVerification input_display={{display :'none'}} btn_style={{marginTop:"90px"}} btn_text={"Send OTP"} OTP_submit_btn_toggle={"OTP_submit_btn_toggle"}/>}/>
-     <Route exact path='/MobileVerification_OTP' element={<MobileVerification input_display={{display :'block'}} btn_style={{marginTop:"50px"}} btn_text={"Next"} mobVarif_btn_toggle={"mobVarif_btn_toggle"}/>}/> 
+     <Route exact path='/MobileVerification' element={<MobileVerification input_display={{display :'none'}} btn_style={{marginTop:"90px"}} btn_text={"Send OTP"} path={"/"} MobileVerification_URL={"/MobileVerification_OTP"}/>}/>
+     <Route exact path='/MobileVerification_OTP' element={<MobileVerification input_display={{display :'block'}} btn_style={{marginTop:"50px"}} btn_text={"Next"} path={"/MobileVerification"} MobileVerification_URL={"/DetailsForm"}/>}/> 
      <Route exact path='/DetailsForm' element={<DetailsForm/>}/>
-     <Route exact path='/YourAadress' element={<YourAadress/>}/>
+     <Route exact path='/YourAadress' element={<YourAadress path={"/CibilCheck"}/>}/>
      <Route exact path='/EmploymentDetails' element={<EmploymentDetails/>}/>
      <Route exact path='/CibilCheck' element={<CibilCheck/>}/>
      </Routes>
