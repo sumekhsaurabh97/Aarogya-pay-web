@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import Header from "./Header";
 
@@ -8,7 +9,12 @@ export default function YourAadress() {
       <Header
         src={"./assets/images/BackArrow.svg"}
         dis={{ display: "block" }}
-        btnStyle={{width :'24px', height :'24px', backgroundColor :'#071329', borderRadius :'50%'}}
+        btnStyle={{
+          width: "24px",
+          height: "24px",
+          backgroundColor: "#071329",
+          borderRadius: "50%",
+        }}
       />
       <div className="mx-[24px] pb-[32px]">
         <div className="w-[100%] h-[8px] border-solid  rounded-[4px] bg-[#EDF4FE] mt-[16px]">
@@ -25,9 +31,11 @@ export default function YourAadress() {
         <select
           name="cars"
           id="cars"
-          className="float-right border-[none] w-[100%] h-[48px] border-[1px] border-solid border-[#DBDBDB] rounded-[8px] mb-[14px] text-[#071329] text-[16px] font-[400]"
+          className="float-right border-[none] w-[100%] h-[48px] border-[1px] border-solid border-[#DBDBDB] rounded-[8px] mb-[14px] text-[#071329] text-[16px] font-[400] pl-[16px]"
         >
-          <option value="Home with Family" className="">Home with Family</option>
+          <option value="Home with Family" className="">
+            Home with Family
+          </option>
           <option value="saab">Saab</option>
           <option value="opel">Opel</option>
           <option value="audi">Audi</option>
@@ -40,7 +48,7 @@ export default function YourAadress() {
           className="w-[100%] h-[48px] border-[1px] border-solid border-[#DBDBDB] rounded-[8px] mb-[14px] pl-[16px] text-[#071329] text-[16px] font-[400]"
         />
 
-        <p className="mb-[5px] text-[14px] font-[500] leading-[22px] text-[#071329] text-[#071329] text-[16px] font-[400]">
+        <p className="mb-[5px] text-[14px] font-[500] leading-[22px] text-[#071329]">
           Locality<span className="text-[red]">*</span>
         </p>
         <input
@@ -49,12 +57,11 @@ export default function YourAadress() {
         />
 
         <p className=" mb-[5px] text-[14px] font-[500] leading-[22px] text-[#071329]">
-          Landmark <i className="font-[400] text-[14px]" >(Optional)</i>
+          Landmark <i className="font-[400] text-[14px]">(Optional)</i>
         </p>
         <input
           type="text"
           className="w-[100%] h-[48px] border-[1px] border-solid border-[#DBDBDB] rounded-[8px] mb-[14px] pl-[16px] text-[#071329] text-[16px] font-[400]"
-
         />
 
         <p className=" mb-[5px] text-[14px] font-[500] leading-[22px] text-[#071329]">
@@ -80,9 +87,11 @@ export default function YourAadress() {
           type="text"
           className="w-[100%] h-[48px] border-[1px] border-solid border-[#DBDBDB] rounded-[8px] mb-[14px] pl-[16px] text-[#071329] text-[16px] font-[400]"
         />
-        <button className="h-[48px] w-[100%] bg-[#294A85] text-[white] mt-[45px]  mx-[auto] block rounded-[8px]">
-          Next
-        </button>
+        <NavLink to="/EmploymentDetails">
+          <button className="h-[48px] w-[100%] bg-[#294A85] text-[white] mt-[45px]  mx-[auto] block rounded-[8px]">
+            Next
+          </button>
+        </NavLink>
       </div>
     </>
   );

@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
-// import { useRef } from "react";
+import React from "react";
+import { NavLink } from "react-router-dom";
+
 import Header from "./Header";
 
 export default function DetailsForm() {
@@ -8,7 +9,12 @@ export default function DetailsForm() {
       <Header
         src={"./assets/images/BackArrow.svg"}
         dis={{ display: "block" }}
-        btnStyle={{width :'24px', height :'24px', backgroundColor :'#071329', borderRadius :'50%'}}
+        btnStyle={{
+          width: "24px",
+          height: "24px",
+          backgroundColor: "#071329",
+          borderRadius: "50%",
+        }}
       />
       <div className="mx-[24px] pb-[32px]">
         <div className="w-[100%] h-[8px] border-solid  rounded-[4px] bg-[#EDF4FE] mt-[16px]">
@@ -63,9 +69,11 @@ export default function DetailsForm() {
           </label>
           <br></br>
         </div>
-        <button className="h-[48px] w-[100%] bg-[#294A85] text-[white] mt-[67px]  mx-[auto] block rounded-[8px]">
-          Next
-        </button>
+        <NavLink to="/YourAadress">
+          <button className="h-[48px] w-[100%] bg-[#294A85] text-[white] mt-[67px]  mx-[auto] block rounded-[8px]">
+            Next
+          </button>
+        </NavLink>
       </div>
     </>
   );

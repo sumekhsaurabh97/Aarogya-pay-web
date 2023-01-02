@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import Header from "./Header";
 
@@ -92,9 +93,11 @@ export default function EmploymentDetails() {
             <option value="Days">Days</option>
           </select>
         </div>
-        <button className="h-[48px] w-[100%] bg-[#294A85] text-[white] mt-[70px]  mx-[auto] block rounded-[8px]">
-          Next
-        </button>
+        <NavLink to="/CibilCheck">
+          <button className="h-[48px] w-[100%] bg-[#294A85] text-[white] mt-[70px]  mx-[auto] block rounded-[8px]">
+            Next
+          </button>
+        </NavLink>
       </div>
     </>
   );
