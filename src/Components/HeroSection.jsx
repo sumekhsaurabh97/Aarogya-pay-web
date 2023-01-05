@@ -6,7 +6,7 @@ import Header from "./Header";
 export default function HeroSection() {
   return (
     <>
-      <Header dis={{ display: "none" }} btnText={"Log In"} />
+      <Header dis={{display: "none"}} btnText={"Log In"} />
       <div className=" mx-[24px] bg-gray pb-[32px]">
         <img
           src="./assets/images/Postpone.svg"
